@@ -1,0 +1,1068 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #000;
+}
+
+body{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100vw;
+    background-color: #333a40;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgba(255,255,255,.55);
+    
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "a b"
+        "c c";
+    /* place-items: center; */
+    position: sticky!important ;
+    top: 0!important;
+    left: 0 !important;
+    z-index: 10399 !important;
+    align-items: center;
+}
+
+
+#boton-menu{
+    border: 0.5px solid #ffffff70;
+    margin: 0 10px 0 0;
+}
+
+.fi-br-menu-burger{
+    color: #ffffff9a;
+    font-size: 2rem;
+}
+
+.menu-botones{
+    margin: 0 10px 0 0;
+}
+/* 
+span{
+    font-size: 30px;
+    display: grid;
+    grid-area: b;
+    font-weight: 100;
+}
+
+.contenedor-logo{
+    display: flex;
+    overflow: hidden;
+    justify-items: center;
+    align-items: center;
+    padding: 0 0 0 20px;
+    font-size: 18px;   
+    grid-area: "a";
+}
+
+.img-codoacodo{
+    width: 87px;
+    height: 54px;
+}
+
+.contenedor-logo-texto{
+    height: max-content;
+    width: max-content;
+    
+}
+
+
+nav{
+    display: flex;
+}
+
+.menu{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 100%;
+    padding: 0px 50px 0px 0px;
+    font-weight: 700;
+    column-gap: 1.3em;
+    justify-content: flex-end;
+} 
+
+a{
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;
+    color: #fff;
+    font-size: 0.9rem;
+    width: max-content;
+    cursor: pointer;
+    font-weight: normal;  
+}
+*/
+
+.hover-botones-menu:hover{
+    color: #7c7d80 !important;
+    
+}
+
+#hover-botones-comprartickets:hover{
+    color: #198754 !important;
+}
+
+
+/* IMAGEN PORTADA
+---------------------------------------------------------------- */
+.bg-carousel-ba1{
+    background-image: url(../img/ba1.jpg);
+}
+
+.bg-carousel-ba2{
+    background-image: url(../img/ba2.jpg);
+}
+
+.bg-carousel-ba3{
+    background-image: url(../img/ba3.jpg);
+}
+
+.carousel-item{
+    background-size: cover;
+    width: 100vw;
+    height: 500px;
+    background-position: center;
+    
+}
+
+.carousel-item svg { 
+    opacity: .5; 
+}
+
+.carousel-caption {
+   display: flex;
+   justify-content: center;
+}
+
+
+
+
+/* .contenedor-img-principal{
+    background-image: url(../img/ba1.jpg);
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    align-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0px 40px;
+    position: relative;
+    justify-items: end;
+    
+}
+ .contenedor-img-principal::before{
+    position: absolute;
+    content: "";
+    inset: 0;
+    background-color: rgb(0 0 0 / 55%);
+ }
+
+
+.contenedor-img-principal-texto{
+    width: 50%;
+    height: 300px;
+    text-align: end;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: center;
+    position: relative;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #fff;
+    gap: 15px;
+    margin: 0 15px 0 0px;
+}
+
+.h2-confbsas{
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.p-texto{
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.contenedor-img-principal-boton1{
+    width: 140px;
+    font-size: 1rem;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    padding: 6px 0 8px 0;
+    cursor: pointer;
+    
+}
+
+.contenedor-img-principal-boton2{
+    width: 140px;
+    font-size: 1rem;
+    background-color: #198754;
+    border: 1px solid #198754;
+    border-radius: 5px;
+    color: #fff;
+    padding: 6px 0 8px 0;
+    cursor: pointer;
+    
+} 
+
+a:hover .contenedor-img-principal-boton2{
+    background:linear-gradient(#0a4e2e, #0b884e);
+    border: 1px solid #0a4e2e;
+}
+
+a:hover .contenedor-img-principal-boton1:hover{
+    background-color: #ffffffcc;
+    color: #000;
+}
+
+.contenedor-img-principal-boton2:hover{
+    background-color: #0b0742;
+}*/
+
+/* CONTENEDOR ORADORES
+------------------------------------------------------------------------- */
+
+.contenedor-oradores-titulo{
+    width: 100%;
+    text-align: center;
+    margin: 11px 0px 11px 0px;
+}
+
+.contenedor-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    width: 100%;
+    height: 100%;
+    place-items: center;
+    margin: 0 0 10px 0;
+    gap: 10px;
+    justify-content: center;
+}
+
+.card{
+    width: 80%;
+    border: 1px solid #d9d3d3;
+    border-radius: 4px 4px 0 0;
+    .card-img{
+        width: 100%;
+        overflow: hidden;
+        border-radius: 4px 4px 0 0;
+        & img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover; 
+          border-radius: 4px 4px 0 0;
+        }
+    }
+    .card-datos{
+        width: 100%;
+        padding: 10px 15px 10px 15px;
+        text-align: left;
+        .card-javascript{
+            border: 1px solid #f7f700;
+            border-radius: 5px;
+            background-color: #f7f700;
+            font-size: 0.9rem;
+            font-weight: bold;
+            color: #000;
+        }
+        .card-react{
+            border: 1px solid #0085f7;
+            border-radius: 5px;
+            background-color: #0085f7;
+            font-size: 0.9rem;
+            font-weight: bold;
+            color: #fff;
+        }
+        .card-h2{
+           margin-bottom: 8px;
+        }
+        .card-p{
+           line-height: 1.6rem;
+        }
+    }
+    
+}
+
+
+.card-negocios{
+    border: 1px solid #42423f;
+    border-radius: 5px;
+    background-color: #42423f;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.card-startups{
+    border: 1px solid #d10202;
+    border-radius: 5px;
+    background-color: #d10202;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.card-img img{
+    transition: all 2s;
+}
+
+.card-img img:hover{
+    transform: scale(1.2, 1.2);
+    filter: grayscale(1);
+}
+
+
+
+
+/* CONTENEDOR IMAGEN PLAYA 
+------------------------------------------------------- */
+.contenedor-playa{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+
+.contenedor-playa-img{
+    width: 100%;
+    overflow: hidden;
+    & img{
+       width: 100%;
+       height: 100%; 
+       object-fit: cover;
+    }
+}
+
+
+
+
+.contenedor-playa-texto{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: #2c2b2b;
+    padding: 10px 27px 0px 20px;
+    color: #fff;
+        & h2{
+          text-align: justify;
+          display: flex;
+          flex-wrap: wrap;  
+        }
+        & p{
+            margin: 0 0 15px 0;
+            font-size: 0.9rem;
+        }
+        & button{
+            width: 100px;
+            font-size: 1rem;
+            color: #fff;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            background-color: transparent;
+            margin: 0px 0 15px 0;
+            cursor: pointer;
+            padding: 10px 0;
+        } 
+}
+
+
+.contenedor-playa-boton:active{
+    transform: scale(0.9, 0.9);
+}
+
+.contenedor-playa-boton:hover{
+    background-color: #ffffffc2;
+    color: #000000d5;
+}
+
+
+/* INGRESAR DATOS 
+-----------------------------------------------------------------*/
+.contenedor-formulario{
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    place-content: center;
+    & div{
+        width: 100%;
+        text-align: center;
+        margin: 10px 0 0 0;
+    }
+    & p{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        text-align: center;
+        margin: 10px 0 14px 0;
+        font-size: 0.9rem;
+        justify-content: center;
+    }
+    .contenedor-formulario-datos{
+        width: 50vw;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+                "a  b"
+                "c  c"
+                "d  d"
+                "e  e"; 
+        gap: 10px;
+        justify-content: center;
+        .contenedor-formulario-datos-nombre{
+            grid-area: a;
+            border-radius: 0.25rem;
+            border: 1px solid #ced4da;
+        }
+        .contenedor-formulario-datos-apellido{
+            grid-area: b;
+            border-radius: 0.25rem;
+            border: 1px solid #ced4da;
+        }
+        .contenedor-formulario-datos-texto{
+            grid-area: c;
+            resize: none;
+            border-radius: 0.25rem;
+            border: 1px solid #ced4da;
+        }
+        .p-item{
+            grid-area: d;
+            width: 100%;
+            display: flex;
+            gap: 0;
+            margin: -12px 0 0 0;
+            font-size: 11px;
+            color: #434141;
+            justify-content: flex-start;
+        }
+        & button{
+            grid-area: e;
+            padding: 8px 0;
+            font-size: 1.1rem;
+            color: #fff;
+            border: 1px solid #039f1e;
+            border-radius: 5px;
+            background-color: #039f1e;
+            margin: 0px 0 15px 0;
+            cursor: pointer;
+        }
+        
+
+    }
+}
+
+
+textarea[placeholder]{
+    padding: 10px 0 0 5px;
+    font-size: 16px;
+}
+
+input:focus, textarea:focus{
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 .2rem rgba(0,123,255,.25);
+}
+
+
+
+.contenedor-formulario-datos-boton:active{
+    color: #495057;
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+    box-shadow: 0 0 0 .2rem rgba(0,123,255,.25);
+    /* color: #fff;
+    background-color: #17a2b8;
+    border-color: #17a2b8; */
+}
+
+.contenedor-formulario-datos-boton:hover{
+    background-color: red;
+}
+
+
+/* FOOTER
+------------------------------------------------------------------- */
+footer{
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100px;
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 15px;
+    background: linear-gradient(45deg, #043e51, #0d1421);
+    place-items: center;
+    .footer{
+        color: #fff;
+        font-size: 0.8rem;
+        text-decoration: none; 
+        grid-row: 2/3;  
+    }
+    .uno{
+        grid-column: 3/4;
+
+    }
+    .dos{
+        grid-column: 4/5;
+    }
+    .tres{
+        grid-column: 5/6;
+    }
+    .cuatro{
+        grid-column: 6/7;
+    }
+    .cinco{
+        grid-column: 7/8;
+    }
+    .seis{
+        grid-column: 8/9;
+    }
+    .siete{
+        grid-column: 9/10 ;
+    }
+
+}
+
+
+/* ---------------------------------------PAGINA COMPRAR TICKET ----------------------------------------*/
+
+
+
+
+/* TARJETAS DESCUENTOS
+---------------------------------------- */
+.contenedor-padre-comprartickets{
+    width: 100vw;
+    margin: 25px 0px 25px 0px;
+}
+
+
+.contenedor-card-comprartickets{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 25px;
+    height: 100%;
+}
+
+.card-1-comprartickets{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    border: 1px solid #0d6efd;
+    height: 40%;
+    border-radius: 5px;
+    .estudiantes{
+        background-color: #0d6efd;
+        padding: 15px;
+        color: #fff;
+        font-weight: 400;
+        border-radius: 5px 5px 0 0;
+    }
+    .parte-abajo{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin: 20px;
+        .descuento{
+            font-size: 16px;
+        }
+        .porcentaje{
+            font-size: 28px;
+        }
+        .presentar-documentacion{
+            color: #6d7379;
+            font-size: 12px;
+        }
+
+    }
+    
+}
+
+.card-2-comprartickets{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    border: 1px solid #0dd9fd;
+    height: 40%;
+    border-radius: 5px;
+    .trainee{
+    background-color: #0dd9fd ;
+        padding: 15px;
+        color: #fff;
+        font-weight: 400;
+        border-radius: 5px 5px 0 0;
+    }
+    .parte-abajo{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin: 20px;
+        .descuento{
+            font-size: 16px;
+        }
+        .porcentaje{
+            font-size: 28px;
+        }
+        .presentar-documentacion{
+            color: #6d7379;
+            font-size: 12px;
+        }
+
+    }
+    
+}
+
+
+.card-3-comprartickets{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    border: 1px solid #ffc107;
+    height: 40%;
+    border-radius: 5px;
+    .junior{
+        background-color: #ffc107;
+        padding: 15px;
+        color: #fff;
+        font-weight: 400;
+        border-radius: 5px 5px 0 0;
+    }
+    .parte-abajo{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin: 20px;
+        .descuento{
+            font-size: 16px;
+        }
+        .porcentaje{
+            font-size: 28px;
+        }
+        .presentar-documentacion{
+            color: #6d7379;
+            font-size: 12px;
+        }
+
+    }
+    
+}
+
+
+/* FORMULARIO 
+-------------------------------------------------- */
+
+   
+.titulo-venta{
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 15px;
+}
+.titulo-valor{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.div-1{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    .div-1-nombre{
+        width: 24%;
+    }
+    .div-1-apellido{
+        width: 24%;
+    }
+}
+
+.div-2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .div-2-email{
+        width: 49%;
+    }
+}
+
+.div-3{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    .div-3-cantidad{
+        width: 24%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 16px;
+    }
+    .div-3-categoria{
+        width: 24%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 16px;
+    }
+}
+
+.div-4{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .div-4-total{
+        width: 49%;
+        text-align:left;
+        font-size: 16px;
+        background-color: #cfe2ff;
+        border: 0.2px solid #08429838;
+        padding: 25px 0 25px 6px;
+        border-radius: 0.25rem;
+        color: #084298;
+        
+    }
+}
+
+.div-5{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    .div-5-boton-borrar, .div-5-boton-resumen, .div-5-boton-total{
+        background-color: #039f13;
+        width: 16%;
+        padding: 10px 0 10px 0;
+        border-radius: 0.25rem;
+        border: 1px solid #039f13;
+        font-size: 20px;
+        color: #fff;
+    }
+}
+
+#botonBorrar{
+    color: #d10202;
+    border: 1px solid #d10202;
+    background-color: #fff;
+}
+
+#botonTotal{
+    color: #039f1e;
+    border: 1px solid #039f1e;
+    background-color: #fff;
+}
+
+input[placeholder]{
+    padding: 10px 0 10px 6px;
+    border-radius: 0.25rem;
+    border: 1px solid #ced4da;
+    font-size: 16px;
+
+}
+
+select{
+    padding: 9px 0 9px 6px;
+    border-radius: 0.25rem;
+    border: 1px solid #ced4da;
+    font-size: 16px;
+}
+
+/* VALIDACION FORMULARIO TICKET  */
+
+/* CAMPOS NO VALIDOS  */
+.error-input{
+    box-shadow: 0 0 5px 1px  #ff0000db;
+    
+}
+/* #nombre:invalid, #apellido:invalid, #mail:invalid, #cantidad:invalid, #categoria:invalid{
+    box-shadow: 0 0 5px 1px  #ff000075;
+} */
+
+/* #nombre:focus:invalid, #apellido:focus:invalid, #mail:focus:invalid, #cantidad:focus:invalid, #categoria:focus:invalid{
+    box-shadow: none;
+    outline: none;
+    
+} */
+
+
+
+
+/* IMPRIMIR TICKET */
+
+#body-imprimirTicket{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+#div-tildeverde{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#tildeverde{
+    width: 20%;
+    height: 90%;
+}
+
+#titulo-tarjeta{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3rem;
+    font-family: monospace;
+    font-size: 1.5rem;
+}
+
+#texto-ticket{
+    font-family: monospace;
+    line-height: 20px;
+}
+
+#div-botonimprimir{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#boton-imprimirTicket{
+    margin: 1rem;
+}
+
+#boton-imprimirTicket>a{
+    font-family: monospace;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+/* ---------------------------------------------RESPONSIVE---------------------------------------------------------------- */
+
+@media(min-width:0) and (max-width: 395px){
+    .carousel-botones{
+        text-align: center;
+        & a{
+            margin-left: 0 !important; 
+        }
+        #corousel-boton-verde{
+            padding: 6px 17px 6px 17px;
+        }
+    }
+}
+ 
+
+@media(min-width: 0) and (max-width: 900px){
+    header{
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: none;
+    }
+    .boton-menu{
+        display: grid;
+        justify-content: end;
+        margin: 0 35px 0 0;
+        color: #ffffff96;
+        border-color: #ffffff54;
+    }
+    nav{
+        display: none;
+        grid-area: c;
+        padding-bottom: 12px;
+    }
+    header nav .menu{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 8px;
+        padding: 0;
+        place-items: center;
+    }
+
+    header:hover nav{
+        display: flex;
+        position: relative;
+            
+    }
+
+    .contenedor-carousel-texto{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: justify;
+        justify-content: center;
+        align-content: center;
+        margin: 30px 0 0 0 !important;
+        padding: 0 !important;
+    }
+
+    .contenedor-playa-texto{
+        width: 100vw;
+        text-align: justify;
+        align-items: center;
+    }
+
+    /* PAGINA COMPRAR TICKETS */
+    .contenedor-card-comprartickets{
+        flex-direction: column;
+        .card-1-comprartickets, .card-2-comprartickets, .card-3-comprartickets{
+            width: 60%;
+        }
+    }
+
+    .div-1{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        .div-1-nombre, .div-1-apellido{
+            width: 60%;
+        }    
+    }
+
+    .div-2{
+        .div-2-email{
+           width: 60%;
+        }
+    }
+
+    .div-3{
+        flex-direction: column;
+        align-items: center;
+        .div-3-cantidad, .div-3-categoria{
+            width: 60%;
+        }
+    }
+
+    .div-4{
+        .div-4-total{
+            width: 60%;
+        }
+    }
+
+    .div-5{
+        flex-direction: column;
+        align-items: center;
+        .div-5-boton-borrar, .div-5-boton-total ,.div-5-boton-resumen{
+            width: 60%;
+        }
+    }
+}
+
+@media(max-width:730px){
+    .contenedor-logo{
+        padding: 0;
+        
+    }
+    .contenedor-img-principal{
+        width: 100%;
+        align-content: center;
+        padding: 0;
+        justify-items: center;
+        padding: 0px 40px;
+    }
+    .contenedor-img-principal-texto{
+        width: 100%;
+        text-align: justify;
+        align-content: center;
+        margin: 0;
+        justify-content: center;
+    }
+
+    .contenedor-formulario{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .contenedor-formulario-datos{
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+
+
+
+    footer{
+        height: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7, 1fr);
+        gap: 5px;
+        place-items: center;
+        .uno{
+            grid-row: 1/2;
+            grid-column: 1/2;
+        }
+        .dos{
+            grid-row: 2/3;
+            grid-column: 1/2;
+        }
+        .tres{
+            grid-row: 3/4;
+            grid-column: 1/2;
+        }
+        .cuatro{
+            grid-row: 4/5;
+            grid-column: 1/2;
+        }
+        .cinco{
+            grid-row: 5/6;
+            grid-column: 1/2;
+        }
+        .seis{
+            grid-row: 6/7;
+            grid-column: 1/2;
+        }
+        .siete{
+            grid-row: 7/8;
+            grid-column: 1/2;
+        }
+    }
+}
+
+
+
