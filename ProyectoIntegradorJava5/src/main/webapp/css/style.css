@@ -886,7 +886,7 @@ select{
 /*MOSTRARCOMPRA.HTML */
 /*MODIFICAR DATOS FORMULARIO */
 
-#modificarCompra{
+.modificarCompra{
 	display: flex;
     justify-content: center;
     gap: 20px;
@@ -1031,21 +1031,6 @@ select{
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
