@@ -765,13 +765,13 @@ form{
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
-    .div-5-boton-borrar, .div-5-boton-resumen, .div-5-boton-total{
+    .div-5-boton-borrar, .div-5-boton-resumen, .div-5-boton-total, .div-5-boton-mostrarCompras{
         background-color: #039f13;
-        width: 16%;
+        width: 11%;
         padding: 10px 0 10px 0;
         border-radius: 0.25rem;
         border: 1px solid #039f13;
-        font-size: 20px;
+        font-size: 14px;
         color: #fff;
     }
 }
@@ -787,6 +787,13 @@ form{
     border: 1px solid #039f1e;
     background-color: #fff;
 }
+
+#botonMostrarCompras{
+    color: rgb(255 255 255);
+    border: 1px solid #FFC800;
+    background-color: #FFC800;
+}
+
 
 input[placeholder]{
     padding: 10px 0 10px 6px;
@@ -876,8 +883,43 @@ select{
 
 
 
+/*MOSTRARCOMPRA.HTML */
+/*MODIFICAR DATOS FORMULARIO */
 
+#modificarCompra{
+	display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
 
+.inputModificar{
+	display: grid;
+}
+
+/*PAGINA CONFIRMACION DE ELIMINACION DE COMPRA*/
+#PaginaEliminacionDeCompra{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+#MensajeSeEliminoCompra{
+    font-size: calc(1.375rem + 1.5vw);
+    align-self: center;
+}
+
+/*PAGINA MOSTRA COMPRA*/
+#TablaMostrarCompras{
+	display: flex;
+    justify-content: space-evenly;
+}
 
 
 
@@ -984,11 +1026,30 @@ select{
     .div-5{
         flex-direction: column;
         align-items: center;
-        .div-5-boton-borrar, .div-5-boton-total ,.div-5-boton-resumen{
+        .div-5-boton-borrar, .div-5-boton-total, .div-5-boton-resumen, .div-5-boton-mostrarCompras{
             width: 60%;
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media(max-width:730px){
     .contenedor-logo{
